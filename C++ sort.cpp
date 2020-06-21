@@ -19,7 +19,7 @@ void mergesort(vector<int>::iterator start, vector<int>::iterator end)
 int main()
 {
     int numthreads = 4;
-    int N = 1000000;
+    int N = 10000000;
     vector<int> v;
     vector<thread> threads;
     auto begin_t = chrono::steady_clock::now();
