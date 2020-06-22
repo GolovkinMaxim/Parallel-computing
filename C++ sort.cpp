@@ -8,7 +8,7 @@ using namespace std;
 
 void mergesort(vector<int>::iterator start, vector<int>::iterator end)
 {
-    if (end - start > 1)
+    if (end - start >= 2)
     {
         mergesort(start, start + (end - start) / 2);
         mergesort(start + (end - start) / 2, end);
