@@ -27,7 +27,7 @@ int main()
   A = 1.0;
   B = 2.0;
   n = 100000000;
-  for (int num_threads = 1; num_threads <= 8; num_threads++){
+  for (int num_threads = 1; num_threads <= 4; num_threads++){
     double timein = omp_get_wtime();
     omp_set_num_threads(num_threads);
     r = integr(A, B, n, f, num_threads);
